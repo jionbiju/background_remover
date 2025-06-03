@@ -1,27 +1,3 @@
-// import React from 'react'
-// import { assets } from '../assets/assets'
-
-// const Footer = () => {
-//   return (
-//     <div className='bg-gray-200 h-44 flex items-center justify-between lg:px-10 md:px-8 sm:px-4'>
-//         <div>    
-//         <img width={100} src={assets.logo} alt="" />
-//         </div>
-//         <div className='flex gap-2'>
-//             <p>Copyright</p>
-//             <img width={24} className='h-5.5' src={assets.copyRight_icon} alt="" />
-//             <p>Jion Biju. All rights reserved.</p>
-//         </div>
-//         <div className='flex gap-7 sm:gap-5'>
-//             <img width={40} className='sm:w-8 sm:h-8' src={assets.linkedin_icon} alt="" />
-//             <img width={40} className='sm:w-8 sm:h-8' src={assets.insta_icon} alt="" />
-//         </div>
-      
-//     </div>
-//   )
-// }
-
-// export default Footer
 import React from 'react'
 import { assets } from '../assets/assets'
 
