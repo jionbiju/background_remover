@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import BuyCredit from './pages/BuyCredit'
 import Result from './pages/Result'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div className='min-h-screen bg-gray-100'>
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/result' element={<Result/>}/>
         <Route path='/buy' element={<BuyCredit/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }
