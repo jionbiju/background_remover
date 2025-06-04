@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Footer = () => {
   return (
-    <div className='bg-gradient-to-tr from-gray-300 to-gray-200 min-h-44 flex flex-col sm:flex-row items-center justify-center sm:justify-between lg:px-10 md:px-8 sm:px-4 px-6 py-8 sm:py-0 gap-6 sm:gap-0'>
+    <div className='bg-gradient-to-tr from-gray-300 to-gray-200 min-h-28 flex flex-col sm:flex-row items-center justify-center sm:justify-between lg:px-10 md:px-8 sm:px-4 px-6 py-8 sm:py-0 gap-6 sm:gap-0'>
         <div>
             <img width={100} className='sm:w-28 w-22' src={assets.logo} alt="" />
         </div>
