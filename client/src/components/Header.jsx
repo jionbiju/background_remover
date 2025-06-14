@@ -18,7 +18,7 @@ const Header = () => {
         </h1>
         <p className='my-4 text-[15px] md:text-[16px] sm:text-[14px] lg:text-[20px] text-gray-800'>Fully automated in 5 seconds with 1 click</p>
         <div>
-            <input type="file" id='upload1'hidden />
+            <input onChange={e => removeBg(e.target.files[0])} type="file" accept='image/*' id='upload1'hidden />
             <label htmlFor="upload1" className='inline-flex gap-3  sm:w-70  lg:px-3 md:px-2.5 md:py-2 lg:py-3.5 xl:px-5 xl:py-5 w-50 px-2.5 py-2.5 rounded-full
              cursor-pointer bg-gradient-to-r from-orange-600 to-yellow-400 m-auto hover:scale-105 transition-all duration-700 '>
                 <img width={17} src={assets.upload_btn_icon} alt="" />
