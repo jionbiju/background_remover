@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../components/Header'
-import Steps from '../components/Steps'
-import Slider from '../components/Slider'
-import Testimonials from '../components/Testimonials'
-import Upload from '../components/Upload'
+import Header from '../components/Header.jsx'
+import Steps from '../components/Steps.jsx'
+import Slider from '../components/Slider.jsx'
+import Testimonials from '../components/Testimonials.jsx'
+import Upload from '../components/Upload.jsx'
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import { assets, plans } from "../assets/assets";
+import { assets, plans } from "../assets/assets.js";
 import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
+import { AppContext } from "../context/AppContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import axios from "axios";
