@@ -2,12 +2,20 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 
 const Result = () => {
-  const { resultImage, image } = useContext(AppContext)
+  const { resultImage, image,setImage,setResultImage } = useContext(AppContext)
+  const navigate = useNavigate()
+  const handleTryAnother = () => {
+    setImage(null)
+    setResultImage(null)
+    navigate('/')
+  }
   return (
     <div className='mx-2 my-3 sm:mx-4 lg:mx-44 mt-8 sm:mt-14 min-h-[75vh]'>
       <div className='bg-white px-4 py-4 sm:px-8 sm:py-6 rounded-lg drop-shadow-lg'>
+
         {/*Image container*/}
         <div className='flex flex-col lg:grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 xl:ml-28'>
           {/*Left Side*/}
@@ -45,7 +53,7 @@ const Result = () => {
         
         {/* ------Buttons---- */}
         {resultImage && (<div className='flex flex-col sm:flex-row justify-center lg:justify-end items-center gap-3 sm:gap-4 mt-6 sm:mt-8'>
-          <button className='w-full sm:w-auto px-6 sm:px-8 py-2.5 text-orange-600 text-sm sm:text-[14px] font-medium border rounded-full border-orange-500 hover:scale-105 transition-all duration-700 order-2 sm:order-1'>
+          <button onClick={handleTryAnother} className='w-full sm:w-auto px-6 sm:px-8 py-2.5 text-orange-600 text-sm sm:text-[14px] font-medium border rounded-full border-orange-500 hover:scale-105 transition-all duration-700 order-2 sm:order-1'>
             Try another image
           </button>
           <a 

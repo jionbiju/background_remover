@@ -16,7 +16,6 @@ const AppContextProvider = (props) => {
   const navigate = useNavigate()
 
   const { getToken } = useAuth();
- // const { isSignedIn } = useUser();
   const { isSignedIn, user } = useUser();
   const { openSignIn } = useClerk();
 
@@ -42,7 +41,7 @@ const AppContextProvider = (props) => {
   };
 
   const removeBg = async (image) => {
-    try {
+    try { 
       if(!isSignedIn){
         return openSignIn();
       }
@@ -55,7 +54,7 @@ const AppContextProvider = (props) => {
         image && formData.append('image', image)
         formData.append('clerkId', user.id);
 
-        //const {data} = await axios.post(backendUrl+'/api/image/remove-bg',formData,{headers:{token}})
+       
         const { data } = await axios.post(
            backendUrl + '/api/image/remove-bg',
            formData,
